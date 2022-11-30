@@ -21,6 +21,10 @@ const masterReducer = (state: any, action: any) => {
       employees: {
         employees: [...action.payload.employees.employees],
       },
+
+      employee: {
+        employees: action.payload.employees.employees,
+      },
     };
 
     return nextState;
