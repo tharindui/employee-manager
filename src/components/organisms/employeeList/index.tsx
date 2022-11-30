@@ -22,10 +22,6 @@ function EmployeeView(props: Props) {
     await dispatch(fetchEmployees());
   };
 
-  useEffect(() => {
-    dispatch(fetchEmployees());
-  }, [dispatch]);
-
   const handleViewChange = () => {
     setIsGridView(!isGridView);
   };

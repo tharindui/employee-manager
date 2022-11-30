@@ -1,22 +1,18 @@
 import BaseLayout from "components/layouts/BaseLayout";
 import EmployeeView from "components/organisms/employeeList";
-import { getAllEmployeesAPI } from "shared/services/employee";
+import { fetchEmployees } from "shared/redux/slices/employeeSlice";
+import { wrapper } from "shared/redux/store";
 import { employeeDetailsType } from "shared/types/employeeDetailTypes";
 
-const List = (employees: employeeDetailsType) => {
-  console.log(878787878, employees);
+const List = () => {
   return <EmployeeView />;
 };
 
-export async function getStaticProps() {
-  const employees = await getAllEmployeesAPI();
+export const getServerSideProps = wrapper.getServerSideProps(
+  (store) => async () => {
+    await store.dispatch(fetchEmployees());
+  }
+);
 
-  console.log(999999, employees);
-  return {
-    props: {
-      ...employees,
-    },
-  };
-}
 List.layout = BaseLayout;
 export default List;
