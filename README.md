@@ -5,13 +5,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-##install all the packages using
+Install all the packages using
 
 yarn
 
-##next run the project on developer environment
+Next run the project on developer environment
 
 yarn dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
