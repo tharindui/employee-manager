@@ -5,11 +5,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-install all the packages using
+##install all the packages using
 
 yarn
 
-next run
+##next run the project on developer environment
 
 yarn dev
 ```
