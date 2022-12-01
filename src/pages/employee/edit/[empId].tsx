@@ -5,11 +5,7 @@ import { wrapper } from "shared/redux/store";
 import BaseLayout from "../../../components/layouts/BaseLayout";
 
 function Employee() {
-  return (
-    <div style={{ paddingTop: 100 }}>
-      <EmployeeForm type="update" />
-    </div>
-  );
+  return <EmployeeForm type="update" />;
 }
 
 export const getServerSideProps = wrapper.getServerSideProps(
