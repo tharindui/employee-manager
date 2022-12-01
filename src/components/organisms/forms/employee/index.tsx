@@ -50,6 +50,7 @@ const useEmployeeForm = (type: string) => {
     async onSubmit(values, { resetForm }) {
       if (type === "update") {
         await dispatch(updateEmployee({ ...values, _id: employees._id }));
+        await dispatch(fetchEmployeeById(empId as string));
         resetForm();
       } else {
         await dispatch(postEmployees(values));
