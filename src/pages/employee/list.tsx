@@ -7,10 +7,12 @@ import { employeeDetailsType } from "shared/types/employeeDetailTypes";
 const List = () => {
   return <EmployeeView />;
 };
-
 export const getServerSideProps = wrapper.getServerSideProps(
   (store) => async () => {
     await store.dispatch(fetchEmployees());
+    return {
+      props: {},
+    };
   }
 );
 

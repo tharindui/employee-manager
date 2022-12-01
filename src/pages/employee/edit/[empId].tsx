@@ -1,4 +1,5 @@
 import EmployeeForm from "components/organisms/forms/employee";
+import { GetServerSideProps } from "next";
 import React from "react";
 import { fetchEmployeeById } from "shared/redux/slices/employeeByIdSlice";
 import { wrapper } from "shared/redux/store";
@@ -9,9 +10,13 @@ function Employee() {
 }
 
 export const getServerSideProps = wrapper.getServerSideProps(
-  (store) => async (context) => {
-    await store.dispatch(fetchEmployeeById(context.params?.empId as string));
-  }
+  (store) =>
+    async ({ params }) => {
+      await store.dispatch(fetchEmployeeById(params?.empId as string));
+      return {
+        props: {},
+      };
+    }
 );
 
 Employee.layout = BaseLayout;
