@@ -4,7 +4,10 @@ import axios from "axios";
 const employeeApi = axios.create({
   //baseURL: "http://localhost:9999",
   baseURL: "http://43.206.130.47:9999",
-  headers: {},
+  headers: {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+  },
 });
 
 export const getAllEmployeesAPI = async () => {
