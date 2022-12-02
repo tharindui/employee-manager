@@ -2,7 +2,8 @@ import { employeeDetailsType } from "shared/types/employeeDetailTypes";
 import axios from "axios";
 
 const employeeApi = axios.create({
-  baseURL: "http://localhost:9999",
+  //baseURL: "http://localhost:9999",
+  baseURL: "http://43.206.130.47:9999",
   headers: {},
 });
 
