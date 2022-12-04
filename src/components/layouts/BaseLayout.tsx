@@ -22,7 +22,7 @@ function BaseLayout({
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <Header />
-          <Container maxWidth="lg" component={Box} mt={12}>
+          <Container maxWidth="lg" pb={30} component={Box} mt={12}>
             {children}
           </Container>
           <Footer />
