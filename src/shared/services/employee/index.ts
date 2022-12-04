@@ -7,7 +7,7 @@ const employeeApi = axios.create({
   headers: {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-    "Content-Security-Policy": "upgrade-insecure-requests",
+    "Upgrade-Insecure-Requests": "1",
   },
 });
 
