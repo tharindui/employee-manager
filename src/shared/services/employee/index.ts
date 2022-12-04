@@ -6,7 +6,6 @@ const employeeApi = axios.create({
   baseURL: "http://52.194.235.87:9999",
   headers: {
     "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
     "Upgrade-Insecure-Requests": "1",
   },
 });
