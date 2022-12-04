@@ -25,9 +25,7 @@ export const getEmployeeByIdAPI = async (empId: string) => {
 };
 
 export const deleteEmployeeByIdAPI = async (empId: number) => {
-  return await employeeApi.delete(
-    `http://52.194.235.87:9999/employee/${empId}`
-  );
+  return await employeeApi.delete(`/employee/${empId}`);
 };
 
 export const updateEmployeeAPI = async (employee: employeeDetailsType) => {
