@@ -3,7 +3,8 @@ import axios from "axios";
 
 const employeeApi = axios.create({
   //baseURL: "http://localhost:9999",
-  baseURL: "http://52.194.235.87:9999",
+  baseURL:
+    "http://ubuntu@ec2-52-194-235-87.ap-northeast-1.compute.amazonaws.com:9999",
   headers: {
     "Access-Control-Allow-Origin": "*",
   },
