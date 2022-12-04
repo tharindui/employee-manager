@@ -17,7 +17,15 @@ function MaterialTextField({
 }: InputProps & TextFieldProps & BaseTextFieldProps) {
   return (
     <Grid container component={Box} my={1} spacing={1}>
-      <Grid justifyItems={"center"} alignItems="center" display="flex" item xs>
+      <Grid
+        justifyItems={"center"}
+        alignItems="center"
+        display="flex"
+        item
+        lg
+        md
+        xs={12}
+      >
         <InputLabel id={label}>{label}</InputLabel>
       </Grid>
       <Grid item>

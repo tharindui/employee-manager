@@ -10,7 +10,7 @@ function GridView({ items, deleteCustomer }: gridViewProps) {
   return (
     <Grid container spacing={3}>
       {items.map((item: employeeDetailsType) => (
-        <Grid key={item._id} item md={3} lg={3} sm={2} xs={2}>
+        <Grid key={item._id} item md={3} lg={3} sm={12} xs={12}>
           <MediaCard
             onClickDeleteCustomer={() => deleteCustomer(item._id || 0)}
             {...item}
