@@ -33,8 +33,8 @@ Resources that i used in this project:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [Learn Material UI](https://mui.com/material-ui/getting-started/overview/)- material ui css framework
 - [Redux tool kit](https://redux-toolkit.js.org/introduction/getting-started) -manage web site globle state with redux tool kit
-- [Amazon EC2][https://redux-toolkit.js.org/introduction/getting-started](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html] - Hosting
-- [Netlify][https://www.netlify.com/] - deploying application with CICD
+- [Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html] - Hosting
+- [Netlify](https://www.netlify.com/) - deploying application with CICD
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
