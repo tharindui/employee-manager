@@ -19,6 +19,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can find the server project [https://github.com/tharindui/employee-manager-server.git](https://github.com/tharindui/employee-manager-server.git)
 
+Find the hosted links below
+front-end hosted in Netlify and back end hosted in AWS EC2 instance
+
+Web: https://employee-manger-aab8b8.netlify.app/employee/list
+Api: http://ec2-3-112-24-153.ap-northeast-1.compute.amazonaws.com:9999
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
