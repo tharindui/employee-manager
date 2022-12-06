@@ -93,7 +93,7 @@ const EmployeeForm = ({ type }: EmployeeForm) => {
               )}
               helperText={
                 formik.touched.firstName && formik.errors.firstName
-                  ? formik.errors.email
+                  ? formik.errors.firstName
                   : ""
               }
               name="firstName"
