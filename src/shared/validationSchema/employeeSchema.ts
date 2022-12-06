@@ -5,8 +5,8 @@ const phoneNumberRegex =
   var stringRegex = new RegExp("^[a-zA-Z ]+$");
 export const employeeSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Required"),
-  firstName: Yup.string().required("Required").min(6,'min 6 characters').max(10,'max 10 characters').matches(stringRegex, "Phone number is not valid"),
-  lastName: Yup.string().required("Required").min(6,'min 6 characters').max(10,'max 10 characters').matches(stringRegex, "Phone number is not valid"),
+  firstName: Yup.string().required("Required").min(6,'min 6 characters').max(10,'max 10 characters').matches(stringRegex, "first name not valid allow only letters and spaces"),
+  lastName: Yup.string().required("Required").min(6,'min 6 characters').max(10,'max 10 characters').matches(stringRegex, "last name not valid allow only letters and spaces"),
   number: Yup.string()
     .matches(phoneNumberRegex, "Phone number is not valid")
     .required("Required"),
