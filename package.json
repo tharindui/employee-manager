@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=82e1db57af7a"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -52,5 +53,7 @@
     "babel-loader": "^8.3.0",
     "chromatic": "^6.13.1",
     "eslint-plugin-storybook": "^0.6.8"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "employee-manager@0.1.0"
 }
