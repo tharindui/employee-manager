@@ -42,7 +42,7 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label} labfriend 222
+      {label} labfriend maduu rocx
     </button>
   );
 };
